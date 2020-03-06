@@ -13,7 +13,9 @@ const nodeAddress = uuid().split('-').join('');
 const greencoin = new Blockchain.Blockchain();
 
 // This will house the network node that mined the blockhash
-const currentNodeUrl = process.env.NODE_ENV || process.argv[3];
+const currentNodeUrl1 = process.env.NODE_ENV || process.argv[3];
+console.log("Node url = "+currentNodeUrl1);
+const currentNodeUrl = "https://naija-decides.herokuapp.com";
 let networkNodeUrls = [];
 
 
@@ -27,8 +29,8 @@ const blockTimestamp = Date.now();
 var myVar = setInterval(myTimer, 120000);
 
 function myTimer() {
-    if(currentNodeUrl === "http://localhost:3001"){
-        rp("http://localhost:3001/mine")
+    if(currentNodeUrl ===  "https://naija-decides.herokuapp.com"){
+        rp("https://naija-decides.herokuapp.com/mine")
         .then(data => {
             // console.log("Block mined");
         });

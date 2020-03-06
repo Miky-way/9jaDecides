@@ -1,6 +1,7 @@
 const sha256 = require('sha256');
 const uuid = require('uuid/v1');
-const currentNodeUrl = process.argv[3];
+// const currentNodeUrl = process.argv[3];
+const currentNodeUrl = "https://naija-decides.herokuapp.com";
 
 // This variable will be used to check if another node has mined the blockhash
 let isBlockMined = false;
