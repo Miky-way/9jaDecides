@@ -13,7 +13,7 @@ const nodeAddress = uuid().split('-').join('');
 const greencoin = new Blockchain.Blockchain();
 
 // This will house the network node that mined the blockhash
-const currentNodeUrl = process.env.NODE_ENV || process.argv[3];
+const currentNodeUrl = "https://naija-decides.herokuapp.com";
 let networkNodeUrls = [];
 
 
